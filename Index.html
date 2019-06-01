@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fantasy Travel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <style>
+
+.container {
+    padding: 0px 0px;
+    width: 100%;
+
+
+  }
+        .carousel-inner img {
+       width: 100%; /* Set width to 100% */
+       margin: auto;
+     }
+     @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  } 
+   </style>
+</head>
+<body style="height:1500px">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Fantasy Travel</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">TourPackage</a></li>
+      
+    </ul>
+    <form class="navbar-form navbar-right" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+
+
+
+<div class="Container">
+    <div class="container"> 
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+      
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="hiking.jpg" alt="hiking" width="1200" height="700">
+              <div class="carousel-caption">
+                    <h3>Hiking</h3>
+                    <p>If you love the outdoors, these hiking trails are perfect for you, family and friends.</p>
+                  </div>
+            </div>
+      
+            <div class="item">
+              <img src="Culinary.jpg" alt="Culinary" width="1200" height="700">
+              <div class="carousel-caption">
+                    <h3>Culinary</h3>
+                    <p>Take a look at a few culinary tours that allow us to indulge in fantastic food and wine.</p>
+                </div>
+            </div>
+          
+            <div class="item">
+              <img src="Snowkiting.jpg" alt="Snowkiting" width="1200" height="700">
+              <div class="carousel-caption">
+                    <h3>Snowkiting</h3>
+                    <p>Always snowkite in groups, wear an avalanche beacon, dress warm, and never exceed your limits.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="Horseriding.jpg" alt="Horseriding" width="1200" height="700">
+                <div class="carousel-caption">
+                        <h3>Horseriding</h3>
+                        <p>No horse riding experience is required, kids from the age of 6 can join</p>
+                </div>
+            </div>
+          </div>
+      
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+</div>
+
+</body>
+</html>
+
