@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -25,10 +28,25 @@
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
   } 
    </style>
+
 </head>
-<body style="height:1500px">
+<body style="height:2000px">
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -38,7 +56,7 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">TourPackage</a></li>
+      <li><a href="#tourpackage" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TourPackage</a></li>
       
     </ul>
     <form class="navbar-form navbar-right" action="/action_page.php">
@@ -112,6 +130,102 @@
         </div>
       </div>
 </div>
+
+<div class="w3-black" id="tourpackage">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">TOUR PACKAGES</h2>
+    <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+      <p>Want to live in the moment? Looking to enrich your life and create unforgettable memories? Whether your trip involves summiting world-class mountain trails, having the experience to ride not on cars but horses, or eating delious food, there’s always a good time to travel and expand your horizons.</p>
+
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <img src="hiking.jpg" alt="hiking" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Hiking</b></p>
+          <p class="w3-opacity">Sat 27 March 2019</p>
+          <p>f you love the outdoors, these hiking trails are perfect for you, family and friends..</p>
+          <button class="w3-button w3-black w3-margin-bottom" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Book Now</button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <img src="Culinary.jpg" alt="Culinary" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Culinary</b></p>
+          <p class="w3-opacity">Sat 28 Sep 2019</p>
+          <p>Take a look at a few culinary tours that allow us to indulge in fantastic food and wine.</p>
+          <button class="w3-button w3-black w3-margin-bottom" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Book Now</button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <img src="Horseriding.jpg" alt="Horse riding" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Horse Riding</b></p>
+          <p class="w3-opacity">Sun 29 Jun 2019</p>
+          <p>No horse riding experience is required, kids from the age of 6 can join and you book early.</p>
+          <button class="w3-button w3-black w3-margin-bottom" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLongTitle" style="align-content: center">Register</h3>
+        </button>
+      </div>
+      <div class="modal-body">
+
+          <p><label><i></i>Name :</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="Name">
+          <p><label><i></i> Surname : </label></p>
+          <input class="w3-input w3-border" type="text" placeholder="Surname">
+          <p><label><i></i> Age : </label></p>
+          <input class="w3-input w3-border" type="text" placeholder="Age ">
+          <p><label><i></i> Contact Details :</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="Contact Details">
+          <p><label><i></i> Location :</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="Location">
+          <p><label><i></i> Place To Visit :</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="Place To Visit">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About</h1><br>
+      <h5 class="w3-center">Fantasy Travel</h5>
+      <p class="w3-large">The Fantasy Travel was founded in South Africa by Ms Nomvula Ngwenya, it was officially lunch on the 31st of March 1997. We help families and friends create new exciting memories  <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
 
 </body>
 </html>
