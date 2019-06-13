@@ -57,6 +57,7 @@
       <li class="active"><a href="#">Home</a></li>
       <li><a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a></li>
       <li><a href="#tourpackage" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TourPackage</a></li>
+      <li><a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a></li>
       
     </ul>
     <form class="navbar-form navbar-right" action="/action_page.php">
@@ -104,9 +105,9 @@
           
             <div class="item">
               <img src="Snowkiting.jpg" alt="Snowkiting" width="1200" height="700">
-              <div class="carousel-caption">
-                    <h3>Snowkiting</h3>
-                    <p>Always snowkite in groups, wear an avalanche beacon, dress warm, and never exceed your limits.</p>
+              <div class="carousel-caption" >
+                    <h3><font color="black">Snowkiting</font></h3>
+                    <p ><font color="black">Always snowkite in groups, wear an avalanche beacon, dress warm, and never exceed your limits.</font></p>
                 </div>
             </div>
 
@@ -144,7 +145,7 @@
         <div class="w3-container w3-white">
           <p><b>Hiking</b></p>
           <p class="w3-opacity">Sat 27 March 2019</p>
-          <p>f you love the outdoors, these hiking trails are perfect for you, family and friends..</p>
+          <p>If you love the outdoors, these hiking trails are perfect for you, family and friends..</p>
           <button class="w3-button w3-black w3-margin-bottom" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Book Now</button>
         </div>
       </div>
@@ -180,22 +181,44 @@
       </div>
       <div class="modal-body">
 
-          <p><label><i></i>Name :</label></p>
-          <input class="w3-input w3-border" type="text" placeholder="Name">
-          <p><label><i></i> Surname : </label></p>
-          <input class="w3-input w3-border" type="text" placeholder="Surname">
-          <p><label><i></i> Age : </label></p>
-          <input class="w3-input w3-border" type="text" placeholder="Age ">
-          <p><label><i></i> Contact Details :</label></p>
-          <input class="w3-input w3-border" type="text" placeholder="Contact Details">
-          <p><label><i></i> Location :</label></p>
-          <input class="w3-input w3-border" type="text" placeholder="Location">
-          <p><label><i></i> Place To Visit :</label></p>
-          <input class="w3-input w3-border" type="text" placeholder="Place To Visit">
+          <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="text" class="form-control" id="Name" placeholder="Enter Name" name="Name">
+          </div>
+          <div class="form-group">
+            <label for="Surname">Surname:</label>
+            <input type="text" class="form-control" id="Surname" placeholder="Enter Surname" name="Surname">
+          </div>
+          <div class="form-group">
+            <label for="Age">Age:</label>
+            <input type="text" class="form-control" id="Age" placeholder="Enter Age" name="Age">
+          </div>
+          <div class="form-group">
+            <label for="Number">Mobile Number:</label>
+            <input type="text" class="form-control" id="Number" placeholder="Mobile Number" name="Number">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Location:</label>
+            <input type="text" class="form-control" id="Location" placeholder="Location" name="Location">
+          </div>
+
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Place To Visit
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Pretoria - Kempton Park</a></li>
+              <li><a href="#">Table mountain - Boulders Beach</a></li>
+              <li><a href="#">uShaka Marine - North Beach</a></li>
+            </ul>
+          </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" >Book Now</button>
       </div>
     </div>
   </div>
@@ -211,6 +234,35 @@
       <h3 class="w3-center">Fantasy Travel</h3>
       <p class="w3-medium">The Fantasy Travel was founded in South Africa by Miss Nomvula Ngwenya, it was officially lunch on the 31st of March 1997. We help families and friends create new exciting memories.</p>
       <p class="w3-medium w3-text-grey w3-hide-medium">We believe in making good lasting memories for you and your family, we take you to amazing places to have unforgettable experiences. We even cater for couple and for Honeymoods, birthday parties and Just a relaxing tour for you  and your friends.We also have the most friendly tour guides who will help you around the place.</p>
+    </div>
+  </div>
+
+
+  <div class="container-fluid bg-info" id="contact">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> johanesburg, South Africa</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +00 15842449614</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> info@fantasytravel.com</p>
+      </div>
+      <div class="col-sm-7">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
